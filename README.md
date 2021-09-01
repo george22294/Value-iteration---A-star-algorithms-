@@ -35,6 +35,19 @@ Based on the +0.04 transition cost, the real transition costs from the "Start" g
 
 <img src="https://github.com/george22294/Value-iteration---A-star-algorithms-/blob/main/results/a_star/real_costs.PNG">
 
-In this way, the heuristic values can be considered valid, because none of them overestimate the real costs.
+In this way, the heuristic values can be considered _valid_, because none of them overestimate the real costs.
 
 After running, the "astar.py" script we can get the optimal path according to the specified _γ_ value (you can change this value in the code) as an _xlsx_ file in  "paths_from_A_star" directory. In order to run this script, it is needed to exist the corresponding _xlsx_ file (with the _expected utilities_) in "utilities" directory. 
+
+The resulting paths for 0.9, 0.6, 0.2 _γ_ values are:
+
+<img src="https://github.com/george22294/Value-iteration---A-star-algorithms-/blob/main/results/a_star/calculated_paths.png">
+
+We can observe that as the value of _γ_ reducing (e.g 0.2), it is harder for the agent to expand the path towards the grid which finally will lead to the optimal path. This happens because agent becomes more "greedy" as _γ_ reducing. Nevertheless, the paths that are produced are all the same due to the _validity_ of the heuristic function which ensures that the optimal path will be found.
+
+## Dependencies
+To run the two scripts the below libraries are needed:
+- NumPy 1.19.2
+- XlsxWriter 1.3.7
+
+
