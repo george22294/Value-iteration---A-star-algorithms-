@@ -6,8 +6,8 @@ Supposing that an agent acts in the below enviroment, its goal is to find the op
 
 <img src="https://github.com/george22294/Value-iteration---A-star-algorithms-/blob/main/problem%20description/grid_world.png">
 
-The agent can move one grid per time (up, down right, left). But, when it decides the direction of its move, the actual result is non-deterministically determined. There is a certain probability distribution for this actual result which is:
-- 0.8 to move to the desired grid
+The agent can move one grid per time (up, down right, left). But, when it decides the direction of its move, the actual result is non-deterministically defined. There is a certain probability distribution for this actual result which is:
+- 0.8 to move in the desired grid
 - 0.2 to move in vertical direction in relation with its desired movement
 
 The movement to any grid has a cost of -0.04, except for the two exit grids:
